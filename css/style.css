@@ -4,12 +4,15 @@ body {
 
 .container1 {
     border: 1px solid red;
+    padding: 5px;
 }
 
 .container1 nav {
     border: 1px solid black;
+    display: inline;
 }
 
 .container1 h1 {
     border: 1px solid goldenrod;
+    display: inline;
 }
