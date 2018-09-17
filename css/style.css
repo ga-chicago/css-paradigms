@@ -2,6 +2,16 @@ body {
     background-color: lavender;
 }
 
+code {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid gray;
+    padding: 2px;
+}
+
+.info {
+    margin: 10px;
+    line-height: 1.5;
+}
 .container1 {
     border: 1px solid red;
 }
@@ -9,8 +19,7 @@ body {
 .container1 nav {
     border: 1px solid black;
     display: inline-block;
-    width: 49%;
-    /*width: calc(50% - 4px);*/
+    width: calc(50% - 4px);
     text-align: right;
     vertical-align: middle;
 }
@@ -19,8 +28,7 @@ body {
     border: 1px solid goldenrod;
     display: inline-block;
     /*remember: block elements let you specify width;*/
-    width: 49%;
-    /*width: calc(50% - 4px); */
+    width: calc(50% - 4px); 
     vertical-align: middle;
 }
 
@@ -50,13 +58,13 @@ body {
 }
 
 .container3 nav {
-    /*border: 1px solid navy;*/
+    border: 1px solid navy;
 }
 .container3 nav a {
     margin-left: 8px;
 }
 
 .container3 h1 {
-    /*border: 1px solid orange;*/
+    border: 1px solid orange;
 }
 
