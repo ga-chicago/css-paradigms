@@ -22,7 +22,8 @@ const reverseWordOrder2 = (str) => {
         } 
         // if this char isn't a space:
         else {
-            currentWord += str[i]
+            currentWord += str[i];
+
         }
 
     }
@@ -32,3 +33,9 @@ const reverseWordOrder2 = (str) => {
  
 const reversed = reverseWordOrder2("Four score and seven years ago")
 console.log("---->" + reversed + "<----")
+
+// issues:
+// it omits the last word 
+// there's an extra space at the end
+
+
