@@ -12,9 +12,13 @@ const reverseWordOrder2 = (str) => {
         // when you get to a space 
         if(str[i] == " ") {
 
-            // a space should be added in the proper place
-            // the current word is "done" and should be added to the string in a proper place
-            output = currentWord + " " + output
+            // a space should be added in the proper place (unless this is the only word so far)
+            // the current word is done and should be added to the output in a proper place
+            if(output == "") {
+                output = currentWord
+            } else {
+                output = currentWord + " " + output
+            }
 
             // clear out the "current word"
             currentWord = ""
@@ -24,6 +28,7 @@ const reverseWordOrder2 = (str) => {
         else {
             currentWord += str[i];
 
+            // add the word if it's not a space but we've reached the end of the string
             if(i === str.length - 1) {
                 output = currentWord + " " + output
             }
@@ -34,11 +39,14 @@ const reverseWordOrder2 = (str) => {
 
 }
  
-const reversed = reverseWordOrder2("Four score and seven years ago")
+let reversed = reverseWordOrder2("Four score and seven years ago")
 console.log("---->" + reversed + "<----")
-
+reversed = reverseWordOrder2("Lakeshore drive is always under construction!!!")
+console.log("---->" + reversed + "<----")
+reversed = reverseWordOrder2("I'm a member of the resistance inside the administration")
+console.log("---->" + reversed + "<----")
 // issues:
-// it omits the last word  - RESOLVED 
-// there's an extra space at the end
+// it omits the last word  - RESOLVED
+// there's an extra space at the end - RESOLVED
 
 
