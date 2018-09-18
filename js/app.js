@@ -48,5 +48,3 @@ console.log("---->" + reversed + "<----")
 // issues:
 // it omits the last word  - RESOLVED
 // there's an extra space at the end - RESOLVED
-
-
